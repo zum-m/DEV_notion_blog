@@ -9,16 +9,7 @@ const notion = new Client({
 // ...
 // ...
 
-// Define the database ID
-const databaseId = process.env.NOTION_DATABASE_ID || ';
 
-// Fetch data from the Notion database
-const response = await notion.databases.query({
-    database_id: process.env.NOTION_DATABASE_ID || '',
-});
-
-// Log the retrieved data
-console.log(response.results);
 
 // ...
 
